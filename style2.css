@@ -1,0 +1,83 @@
+/* 重置浏览器默认样式  */
+*{
+	margin:0;
+	padding:0;
+}
+a{
+	text-decoration: none;
+}
+ul{
+	list-style:none;
+}
+
+/* 页面结构 */
+#header{
+	background-color: #e8346b;
+}
+#banner{
+	background: url(images/unsplash.jpg) no-repeat  center -350px;
+	height:550px;
+}
+#main{
+	
+}
+#footer{
+	background-color: #e8346b;
+}
+
+
+/* header  */
+
+
+
+/* main */
+.about{
+	background-color:#fefbeb;
+}
+.skill{
+	background-color:#dff9fe;
+}
+.works{
+	background-color:#fefbeb;
+}
+.experience{
+	background-color:#dff9fe;
+}
+.w1180{
+	width:1180px;
+	/* background-color:green; */
+	margin:0 auto;
+	overflow:hidden;
+}
+.left{
+	float:left;
+	width:400px;
+}
+.right{
+	float:left;
+	width:780px;
+	background-color:red;
+}
+.left img{
+	width:400px;
+	display:block;
+}
+
+/*  footer */
+.box{
+	width:295px;
+	height:150px;
+	float:left;
+	/* background-color:#333; */
+}
+.box img{
+	width:80px;
+}
+.box .left2{
+	float:left;
+	width:80px;
+}
+.box .right2{
+	float:left;
+	width:215px;
+}
