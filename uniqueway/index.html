@@ -20,10 +20,31 @@
 			footer a {
 				color: #fff;
 			}
+			#aaa{
+				background-color: red;
+				height:600px;
+				font-size:100px;
+			}
+			#bbb{
+				background-color: yellow;
+				height:600px;
+			}
+			
+			#maodian{
+				position:fixed;
+				right:50px;
+				bottom:50px;
+				background:red;
+				padding:10px;
+			}
+			#maodian a{
+				color:#fff;
+			}
 		</style>
 	</head>
 	<body>
-		<header>
+		<div id="maodian"><a href="#ccc">返回</a></div>
+		<header id="ccc">
 			<div>
 				<img src="img/LOGO.png" />
 			</div>
@@ -31,10 +52,10 @@
 				<ul>
 					<li><a href="">首页</a></li>
 					<li><a href="">订制旅游</a></li>
-					<li><a href="">客户评价</a></li>
+					<li><a href="form.html">客户评价</a></li>
 					<li><a href="">目的地</a></li>
-					<li><a href="">旅行商店</a></li>
-					<li><a href="">关于我们</a></li>
+					<li><a href="#bbb">旅行商店</a></li>
+					<li><a href="#aaa">联系我们</a></li>
 				</ul>
 			</nav>
 			<div>
@@ -130,7 +151,7 @@
 						</ul>	
 					</div>
 				</div>
-				<div class="box52">
+				<div class="box52" id="bbb">
 					<form action="">
 						用户名：<input type="text"><br />
 						密码：<input type="password"><br />
@@ -183,7 +204,7 @@
 					<img src='img/erweima.png' />
 
 				</div>
-				<div>
+				<div id="aaa">
 					<img src='img/phone.svg' />
 					<span>客服热线：400-890-3040</span>
 				</div>
