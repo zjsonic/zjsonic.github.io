@@ -3,16 +3,32 @@
 	<head>
 		<meta charset="utf-8">
 		<title>DPR</title>
-		<script>
-			window.onload() = {
-				var dpr = window.devicePixelRatio
-				var p1 = document.getElementById('p1')
-				p1.innerHTML = 'DPR = ' + dpr
-			}
+		<script type="text/javascript">
+			/*! GetDevicePixelRatio | Author: Tyson Matanich, 2012 | License: MIT */
+			(function (window) {
+				window.getDevicePixelRatio = function () {
+					var ratio = 1;
+					// To account for zoom, change to use deviceXDPI instead of systemXDPI
+					if (window.screen.systemXDPI !== undefined && window.screen.logicalXDPI !== undefined && window.screen.systemXDPI > window.screen.logicalXDPI) {
+						// Only allow for values > 1
+						ratio = window.screen.systemXDPI / window.screen.logicalXDPI;
+					}
+					else if (window.devicePixelRatio !== undefined) {
+						ratio = window.devicePixelRatio;
+					}
+					return ratio;
+				};
+			})(this);
 		</script>
 	</head>
 	<body>
 		
 		<p id="p1"></p>
+		<script>
+			var devicePixelRatio = window.getDevicePixelRatio();
+			var p1 = document.getElementById('p1')
+			p1.innerHTML = 'DPR = ' + devicePixelRatio
+			// console.log(p1)
+		</script>
 	</body>
 </html>
